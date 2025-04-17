@@ -1,6 +1,27 @@
 
 # Monitoring System Resources Using Netdata
 
+
+# what is Netdata?
+
+Netdata is a free, open-source, real-time performance and health monitoring tool designed for systems and applications. It provides detailed, interactive dashboards to visualize metrics like CPU, memory, disk, network, and more, with minimal configuration and low overhead.
+Key Features:
+Real-Time Monitoring: Collects and displays metrics at a per-second granularity.
+
+Comprehensive Metrics: Tracks system resources (CPU, RAM, disk I/O), network activity, Docker containers, and application performance.
+
+Web Dashboard: Accessible via a browser (e.g., http://localhost:19999 when running locally), offering interactive charts and visualizations.
+
+Alerting: Built-in health checks with configurable alerts for anomalies (e.g., high CPU usage).
+
+Lightweight: Runs efficiently on servers, containers, or IoT devices.
+
+Extensible: Supports plugins for monitoring databases, web servers, and custom apps.
+
+Docker Support: Easily deployed via Docker for quick setup.
+
+
+
 # Step 1: Installing Docker
 
 Open terminal and install docker
