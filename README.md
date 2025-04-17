@@ -1,11 +1,11 @@
 
 # Monitoring System Resources Using Netdata
 
-## Step 1: Installing Docker
+# Step 1: Installing Docker
 
 Open terminal and install docker
 
-## Step 2: Install Netdata via Docker
+# Step 2: Install Netdata via Docker
 
 Run the following command to start Netdata in a Docker container:
 
@@ -15,7 +15,7 @@ Run the following command to start Netdata in a Docker container:
 ```
 This maps port 19999 for accessing, mounts necessary host directories for system metrics, and grants required permissions.
 
-## Step 3: Accessing Netdata Dashboard
+# Step 3: Accessing Netdata Dashboard
 
 1. Open a web browser and navigate to:
 
@@ -29,7 +29,7 @@ http://localhost:19999
 ![IMG_20250417_181348](https://github.com/user-attachments/assets/1cb9ede4-64f7-4698-b955-db002b1dd739)
 
 
-## Step 4: Monitor Key Metrics
+# Step 4: Monitor Key Metrics
 
 CPU: View usage by core, interrupts, and processes under the "CPU" section.
 
@@ -40,7 +40,7 @@ Disk: Monitor disk I/O, utilization, and space in the "Disk" section.
 Docker Containers:The Docker containers are running, so Netdata auto-detects and displays container metrics under "Containers."
 
 
-## Step 5: Exploring Alerts and Logs
+# Step 5: Exploring Alerts and Logs
 
 Alerts: Check the "Alarms" section in the dashboard for active alerts (e.g., high CPU or low disk space).
 
@@ -49,6 +49,8 @@ Alerts: Check the "Alarms" section in the dashboard for active alerts (e.g., hig
 
 
 ![IMG_20250417_181328](https://github.com/user-attachments/assets/ea872a0d-5cb7-463f-80c3-c64c1b04ea02)
+
+
 
 Logs: View Netdata logs for debugging or performance insights:
 
@@ -64,9 +66,12 @@ Logs are stored in /var/log/netdata/ inside the container.
 
 ![IMG-20250417-WA0037](https://github.com/user-attachments/assets/4a1e2f1d-0423-4b1f-8b82-521464a9c92b)
 
-## Step 6: Capturing  Dashboard Screenshot
+
+
+# Step 6: Capturing  Dashboard Screenshot
 
 On the Netdata dashboard, navigate to a view showing key metrics (e.g., CPU, memory, disk)
+
 
 ![IMG-20250417-WA0031](https://github.com/user-attachments/assets/9a415627-8cd1-497f-b678-f1a7616b8a5c)
 
@@ -80,17 +85,18 @@ If the dashboard doesn’t load, verify the Docker container is running:
 docker ps
 ```
 
+
 Check for errors in logs if metrics are missing
 
 ```bash
 docker logs netdata
 ```
 
+
 To stop the container
 
 ```bash
 docker stop netdata
-
 ```
 
 
